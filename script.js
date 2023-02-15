@@ -62,7 +62,7 @@ function changeColor(changeSquare) {
     }
 
 }
-grid.addEventListener('click', function(e) {
+grid.addEventListener('mouseover', function(e) {
     var selectSquare = e.target 
     color = corePalette.value
     changeColor(selectSquare.id)
