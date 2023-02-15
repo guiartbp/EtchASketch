@@ -11,12 +11,19 @@
     <div id="container">
         <h1 id="h1">Etch-a-sketch</h1>
         
-        <input type="color" id="color">
-        <button id="colorSelected">Color mode</button>
+        <div id="colorDiv" class="divP">
+            <input type="color" value="#333333" id="color">
+            <p id="colorP" class="paragraph"></p>
+        </div>
+        <button id="colorSelected" class="active" >Color mode</button>
         <button id="colorRainbow">Rainbow mode</button>
+        <button id="colorTen">-10%</button>
         <button id="eraser">Eraser</button>
         <button id="clear">Clear</button>
-        <input type="range" min="2" value="16" id="range">
+        <div id="input" class="divP">            
+            <p id="inputSize" class="paragraph"></p>
+            <input type="range" min="2" value="16" id="range">
+        </div>
     </div>
 
     <script src="script.js"></script>
